@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+
+
+body{
+    background-color: #FEFBF6;
+
+}
+.loading {
+
+	font-size: 50px;
+	color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+    text-transform: capitalize;
+    color: #7F5283;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title {
+	text-align: center;
+	padding: 50px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.title h1{
+    position: relative;
+    color: #3D3C42;
+    font-weight: bold;
+
+} 
+.title h1::before {
+	content: "";
+	position: absolute;
+	bottom: -13px;
+	width: 100px;
+	height: 5px;
+	background-color: #A6D1E6;
+	left: 50%;
+	transform: translate(-50%);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+main{
+    display: flex;
 }
 
-.App-link {
-  color: #61dafb;
+.title-job{
+    color: #3D3C42;
+}
+.info-job{
+    margin-left: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.date-job {
+	color: #7F5283;
+	text-transform: capitalize;
+	padding: 10px 0;
 }
+
+.tasks-job {
+	margin: -10px;
+}
+
+.tasks-job li{
+    
+    color: #7F5283;
+    list-style: none;
+    position: relative;
+    margin: 8px 0;
+}
+
+.tasks-job li::before {
+	content: ".";
+	position: absolute;
+	left: -21px;
+	font-family: "FontAwesome";
+	content: "\f138";
+	color: #0d6efd;
+}
+
